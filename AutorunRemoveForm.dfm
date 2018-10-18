@@ -2,8 +2,8 @@ object AutorunRemove: TAutorunRemove
   Left = 0
   Top = 0
   Caption = 'Autorun Remove'
-  ClientHeight = 462
-  ClientWidth = 733
+  ClientHeight = 513
+  ClientWidth = 612
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,7 +12,7 @@ object AutorunRemove: TAutorunRemove
   Font.Style = []
   FormStyle = fsMDIChild
   OldCreateOrder = False
-  Position = poDesktopCenter
+  Position = poDefault
   Visible = True
   OnClick = btn2Click
   OnClose = FormClose
@@ -22,8 +22,8 @@ object AutorunRemove: TAutorunRemove
   object lv1: TListView
     Left = 0
     Top = 33
-    Width = 733
-    Height = 429
+    Width = 612
+    Height = 480
     Align = alClient
     Columns = <
       item
@@ -41,11 +41,13 @@ object AutorunRemove: TAutorunRemove
     RowSelect = True
     TabOrder = 0
     ViewStyle = vsReport
+    ExplicitWidth = 733
+    ExplicitHeight = 429
   end
   object tlb1: TToolBar
     Left = 0
     Top = 0
-    Width = 733
+    Width = 612
     Height = 33
     ButtonHeight = 36
     ButtonWidth = 38
@@ -53,6 +55,7 @@ object AutorunRemove: TAutorunRemove
     Images = il1
     ShowCaptions = True
     TabOrder = 1
+    ExplicitWidth = 733
     object btn1: TToolButton
       Left = 0
       Top = 0
@@ -65,7 +68,7 @@ object AutorunRemove: TAutorunRemove
     Left = 576
     Top = 400
     Bitmap = {
-      494C010101000800140010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010101000800180010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFB6B6
       B600FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF

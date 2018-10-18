@@ -4,7 +4,7 @@ object XFormMain: TXFormMain
   Caption = 'WinTools'
   ClientHeight = 557
   ClientWidth = 792
-  Color = clMenu
+  Color = cl3DDkShadow
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -31,9 +31,20 @@ object XFormMain: TXFormMain
     ButtonHeight = 36
     ButtonWidth = 54
     Caption = 'tlb1'
+    Color = clBtnFace
+    Ctl3D = False
+    Customizable = True
+    DoubleBuffered = True
+    DrawingStyle = dsGradient
+    EdgeInner = esLowered
+    EdgeOuter = esNone
+    Flat = False
     Images = il1
+    ParentColor = False
+    ParentDoubleBuffered = False
     ShowCaptions = True
     TabOrder = 1
+    Transparent = False
     object btnAutoRun: TToolButton
       Left = 0
       Top = 0
@@ -64,7 +75,7 @@ object XFormMain: TXFormMain
     Left = 592
     Top = 448
     Bitmap = {
-      494C010117001800140010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010117001800180010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000006000000001002000000000000060
       000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
