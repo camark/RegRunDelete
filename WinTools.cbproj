@@ -153,11 +153,27 @@
         <AppEnableHighDPI>true</AppEnableHighDPI>
     </PropertyGroup>
     <ItemGroup>
-        <CppCompile Include="mainForm.cpp">
-            <Form>Form1</Form>
+        <CppCompile Include="ABOUT.cpp">
+            <Form>AboutBox</Form>
             <FormType>dfm</FormType>
-            <DependentOn>mainForm.h</DependentOn>
+            <DependentOn>ABOUT.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="AutorunRemoveForm.cpp">
+            <Form>AutorunRemove</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>AutorunRemoveForm.h</DependentOn>
             <BuildOrder>2</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="LinkArrow.cpp">
+            <Form>FormLinkArrow</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>LinkArrow.h</DependentOn>
+            <BuildOrder>4</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="MsgUtil.cpp">
+            <DependentOn>MsgUtil.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
         </CppCompile>
         <PCHCompile Include="RegRunDelete.h">
             <BuildOrder>1</BuildOrder>
@@ -166,7 +182,16 @@
         <CppCompile Include="WinTools.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>
-        <FormResources Include="mainForm.dfm"/>
+        <CppCompile Include="XMainForm.cpp">
+            <Form>Form2</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>XMainForm.h</DependentOn>
+            <BuildOrder>3</BuildOrder>
+        </CppCompile>
+        <FormResources Include="XMainForm.dfm"/>
+        <FormResources Include="LinkArrow.dfm"/>
+        <FormResources Include="AutorunRemoveForm.dfm"/>
+        <FormResources Include="ABOUT.dfm"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -219,14 +244,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName=".\Win32\Debug\WinTools.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin\borlndmm.dll" Class="DependencyModule">
                     <Platform Name="Win32">
-                        <RemoteName>WinTools.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(UsingDelphiRTL)'=='true'" LocalName="$(BDS)\bin\borlndmm.dll" Class="DependencyModule">
-                    <Platform Name="Win32">
+                <DeployFile LocalName=".\Win64\Debug\WinTools.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win64">
+                        <RemoteName>WinTools.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -235,14 +260,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32250.dll" Class="DependencyModule">
+                <DeployFile LocalName=".\Win32\Debug\WinTools.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
+                        <RemoteName>WinTools.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName=".\Win32\Debug\WinTools.tds" Configuration="Debug" Class="DebugSymbols">
+                <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'" LocalName="$(BDS)\bin\cc32250.dll" Class="DependencyModule">
                     <Platform Name="Win32">
-                        <RemoteName>WinTools.tds</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

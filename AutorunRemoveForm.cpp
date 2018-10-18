@@ -4,19 +4,19 @@
 #include <Registry.hpp>
 #pragma hdrstop
 
-#include "mainForm.h"
+#include "AutorunRemoveForm.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TForm1 *Form1;
+TAutorunRemove *AutorunRemove;
 //---------------------------------------------------------------------------
-__fastcall TForm1::TForm1(TComponent* Owner)
+__fastcall TAutorunRemove::TAutorunRemove(TComponent* Owner)
 	: TForm(Owner)
 {
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TForm1::ReadRunKey(bool isUser)
+void __fastcall TAutorunRemove::ReadRunKey(bool isUser)
 {
 
 	String autoKey=isUser?user:machine;
@@ -37,7 +37,7 @@ void __fastcall TForm1::ReadRunKey(bool isUser)
 			String s=keys->Strings[i];
 			String value=reg->ReadString(s);
 
-			TListItem* item=ListView1->Items->Add();
+			TListItem* item=lv1->Items->Add();
 			item->Caption=s;
 			item->SubItems->Add(value);
 			item->SubItems->Add(autoKey);
@@ -48,17 +48,17 @@ void __fastcall TForm1::ReadRunKey(bool isUser)
 
 	reg->Free();
 }
-void __fastcall TForm1::FormCreate(TObject *Sender)
+void __fastcall TAutorunRemove::FormCreate(TObject *Sender)
 {
 	ReadRunKey(false);
 	ReadRunKey(true);
 }
 //---------------------------------------------------------------------------
-void __fastcall TForm1::Button1Click(TObject *Sender)
+void __fastcall TAutorunRemove::btn2Click(TObject *Sender)
 {
-	if(ListView1->SelCount>0)
+	if(lv1->SelCount>0)
 	{
-		TListItem* selItem=ListView1->Selected;
+		TListItem* selItem=lv1->Selected;
 
 		if(::MessageBox(this->Handle,_T("你确定要删除该项吗?"),_T("确认"),MB_ICONQUESTION|MB_OKCANCEL)==IDOK)
 		{
@@ -86,15 +86,11 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
     }
 }
 //---------------------------------------------------------------------------
-void __fastcall TForm1::btn1Click(TObject *Sender)
+
+
+void __fastcall TAutorunRemove::FormClose(TObject *Sender, TCloseAction &Action)
 {
-	if (::MessageBox(Handle,_T("你真的要退出吗？"),
-											   _T("询问"), MB_YESNO +
-											   MB_ICONQUESTION +
-											   MB_DEFBUTTON2) == IDYES) {
-												Close();
-										   }
+    Action=caFree;
 }
 //---------------------------------------------------------------------------
-
 
