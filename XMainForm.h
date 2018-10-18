@@ -14,6 +14,7 @@
 #include <Vcl.ImgList.hpp>
 #include <Vcl.Menus.hpp>
 #include <Vcl.ToolWin.hpp>
+#include <Vcl.XPMan.hpp>
 //---------------------------------------------------------------------------
 class TForm2 : public TForm
 {
@@ -34,6 +35,7 @@ __published:	// IDE-managed Components
 	void __fastcall btn1Click(TObject *Sender);
 	void __fastcall actLinkArrowExecute(TObject *Sender);
 	void __fastcall About1Click(TObject *Sender);
+	void __fastcall Exit1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm2(TComponent* Owner);

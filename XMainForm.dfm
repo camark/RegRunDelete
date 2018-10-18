@@ -4,7 +4,7 @@ object Form2: TForm2
   Caption = 'WinTools'
   ClientHeight = 557
   ClientWidth = 792
-  Color = clMoneyGreen
+  Color = clMenu
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -864,12 +864,15 @@ object Form2: TForm2
       000000000000}
   end
   object mm1: TMainMenu
+    BiDiMode = bdLeftToRight
+    ParentBiDiMode = False
     Left = 424
     Top = 376
     object System1: TMenuItem
       Caption = 'System'
       object Exit1: TMenuItem
         Caption = 'Exit'
+        OnClick = Exit1Click
       end
     end
     object Help1: TMenuItem
