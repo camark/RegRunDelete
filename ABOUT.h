@@ -1,7 +1,7 @@
-//----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 #ifndef AboutH
 #define AboutH
-//----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
 #include <System.hpp>
 #include <Winapi.Windows.hpp>
 #include <System.SysUtils.hpp>
@@ -12,9 +12,9 @@
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Buttons.hpp>
 #include <Vcl.ExtCtrls.hpp>
-//----------------------------------------------------------------------------
-class TAboutBox : public TForm
-{
+
+// ----------------------------------------------------------------------------
+class TAboutBox : public TForm {
 __published:
 	TPanel *Panel1;
 	TImage *ProgramIcon;
@@ -23,13 +23,16 @@ __published:
 	TLabel *Copyright;
 	TLabel *Comments;
 	TButton *OKButton;
+
 	void __fastcall OKButtonClick(TObject *Sender);
 	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+
 private:
 public:
 	virtual __fastcall TAboutBox(TComponent* AOwner);
 };
-//----------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------
 extern PACKAGE TAboutBox *AboutBox;
-//----------------------------------------------------------------------------
-#endif    
+// ----------------------------------------------------------------------------
+#endif

@@ -172,6 +172,7 @@
             <BuildOrder>4</BuildOrder>
         </CppCompile>
         <CppCompile Include="MsgUtil.cpp">
+            <VirtualFolder>{E725721A-6299-491B-89C1-4843A8C799A9}</VirtualFolder>
             <DependentOn>MsgUtil.h</DependentOn>
             <BuildOrder>6</BuildOrder>
         </CppCompile>
@@ -189,9 +190,9 @@
             <BuildOrder>3</BuildOrder>
         </CppCompile>
         <FormResources Include="XMainForm.dfm"/>
-        <FormResources Include="LinkArrow.dfm"/>
-        <FormResources Include="AutorunRemoveForm.dfm"/>
         <FormResources Include="ABOUT.dfm"/>
+        <FormResources Include="AutorunRemoveForm.dfm"/>
+        <FormResources Include="LinkArrow.dfm"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -222,6 +223,9 @@
                 <Source>
                     <Source Name="MainSource">WinTools.cpp</Source>
                 </Source>
+                <VFOLDERS>
+                    <VFOLDER ID="{E725721A-6299-491B-89C1-4843A8C799A9}" name="Util"/>
+                </VFOLDERS>
             </CPlusPlusBuilder.Personality>
             <Deployment Version="3">
                 <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32c250mt.dll" Class="DependencyModule">
