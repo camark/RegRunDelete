@@ -30,7 +30,7 @@ void __fastcall TFormLinkArrow::btn1Click(TObject *Sender)
 	unique_ptr<TLinkArrow> linkArrow(new TLinkArrow());
 	linkArrow->doExecute();
 
-    MesssageUtil::Info(Handle,_T("OK.Please refresh Desktop!"));
+    MessageUtil::Info(Handle,_T("OK.Please refresh Desktop!"));
 }
 //---------------------------------------------------------------------------
 

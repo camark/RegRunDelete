@@ -4,7 +4,7 @@
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
-USEFORM("XMainForm.cpp", Form2);
+USEFORM("XMainForm.cpp", XFormMain);
 USEFORM("LinkArrow.cpp", FormLinkArrow);
 USEFORM("AutorunRemoveForm.cpp", AutorunRemove);
 USEFORM("ABOUT.cpp", AboutBox);
@@ -15,7 +15,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 	{
 		Application->Initialize();
 		Application->MainFormOnTaskBar = true;
-		Application->CreateForm(__classid(TForm2), &Form2);
+		Application->CreateForm(__classid(TXFormMain), &XFormMain);
 		Application->CreateForm(__classid(TAboutBox), &AboutBox);
 		Application->Run();
 	}

@@ -16,7 +16,7 @@
 #include <Vcl.ToolWin.hpp>
 #include <Vcl.XPMan.hpp>
 //---------------------------------------------------------------------------
-class TForm2 : public TForm
+class TXFormMain : public TForm
 {
 __published:	// IDE-managed Components
 	TStatusBar *stat1;
@@ -38,9 +38,9 @@ __published:	// IDE-managed Components
 	void __fastcall Exit1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-	__fastcall TForm2(TComponent* Owner);
+	__fastcall TXFormMain(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm2 *Form2;
+extern PACKAGE TXFormMain *XFormMain;
 //---------------------------------------------------------------------------
 #endif

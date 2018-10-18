@@ -183,7 +183,7 @@
             <BuildOrder>0</BuildOrder>
         </CppCompile>
         <CppCompile Include="XMainForm.cpp">
-            <Form>Form2</Form>
+            <Form>XFormMain</Form>
             <FormType>dfm</FormType>
             <DependentOn>XMainForm.h</DependentOn>
             <BuildOrder>3</BuildOrder>
