@@ -1,7 +1,7 @@
 object AutorunRemove: TAutorunRemove
   Left = 0
   Top = 0
-  Caption = 'Autorun Remove'
+  Caption = #33258#21160#36816#34892
   ClientHeight = 513
   ClientWidth = 612
   Color = clBtnFace
@@ -21,45 +21,44 @@ object AutorunRemove: TAutorunRemove
   TextHeight = 13
   object lv1: TListView
     Left = 0
-    Top = 33
+    Top = 41
     Width = 612
-    Height = 480
+    Height = 472
     Align = alClient
     Columns = <
       item
-        Caption = 'Name'
+        Caption = #21517#31216
         Width = 150
       end
       item
-        Caption = 'Path'
+        Caption = #36335#24452
         Width = 250
       end
       item
-        Caption = 'Registry Path'
+        Caption = #27880#20876#34920#36335#24452
         Width = 250
       end>
     RowSelect = True
     TabOrder = 0
     ViewStyle = vsReport
-    ExplicitWidth = 733
-    ExplicitHeight = 429
+    ExplicitTop = 33
+    ExplicitHeight = 480
   end
   object tlb1: TToolBar
     Left = 0
     Top = 0
     Width = 612
-    Height = 33
+    Height = 41
     ButtonHeight = 36
-    ButtonWidth = 38
+    ButtonWidth = 31
     Caption = 'tlb1'
     Images = il1
     ShowCaptions = True
     TabOrder = 1
-    ExplicitWidth = 733
     object btn1: TToolButton
       Left = 0
       Top = 0
-      Caption = 'Delete'
+      Caption = #21024#38500
       ImageIndex = 0
       OnClick = btn2Click
     end
@@ -68,7 +67,7 @@ object AutorunRemove: TAutorunRemove
     Left = 576
     Top = 400
     Bitmap = {
-      494C010101000800180010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010101000800040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000001000000001002000000000000010
       000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFB6B6
       B600FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF

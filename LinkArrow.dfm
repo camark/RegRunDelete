@@ -1,7 +1,7 @@
 object FormLinkArrow: TFormLinkArrow
   Left = 0
   Top = 0
-  Caption = 'Link Arrow'
+  Caption = #24555#25463#26041#24335#31661#22836
   ClientHeight = 406
   ClientWidth = 609
   Color = clBtnFace
@@ -21,7 +21,7 @@ object FormLinkArrow: TFormLinkArrow
     Top = 32
     Width = 281
     Height = 41
-    Caption = 'Make Shortcut Arrow Disappear'
+    Caption = #21435#25481#31661#22836
     TabOrder = 0
     OnClick = btn1Click
   end

@@ -892,16 +892,16 @@ object XFormMain: TXFormMain
     Left = 424
     Top = 376
     object System1: TMenuItem
-      Caption = 'System'
+      Caption = #31995#32479
       object Exit1: TMenuItem
-        Caption = 'Exit'
+        Caption = #36864#20986
         OnClick = Exit1Click
       end
     end
     object Help1: TMenuItem
-      Caption = 'Help'
+      Caption = #24110#21161
       object About1: TMenuItem
-        Caption = 'About'
+        Caption = #20851#20110
         OnClick = About1Click
       end
     end
