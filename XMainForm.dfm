@@ -27,9 +27,9 @@ object XFormMain: TXFormMain
     Left = 0
     Top = 0
     Width = 792
-    Height = 33
+    Height = 41
     ButtonHeight = 36
-    ButtonWidth = 54
+    ButtonWidth = 55
     Caption = 'tlb1'
     Color = clBtnFace
     Ctl3D = False
@@ -49,11 +49,23 @@ object XFormMain: TXFormMain
       Left = 0
       Top = 0
       Action = actAutoRun
+      AutoSize = True
+      Caption = #33258#21160#36816#34892
     end
     object btnLinkArrow: TToolButton
-      Left = 54
+      Left = 59
       Top = 0
       Action = actLinkArrow
+      AutoSize = True
+      Caption = #24555#25463#31661#22836
+    end
+    object ToolButton1: TToolButton
+      Left = 118
+      Top = 0
+      AutoSize = True
+      Caption = #25991#20214#38544#34255
+      ImageIndex = 3
+      OnClick = ToolButton1Click
     end
   end
   object actlst1: TActionList
@@ -75,7 +87,7 @@ object XFormMain: TXFormMain
     Left = 592
     Top = 448
     Bitmap = {
-      494C010117001800180010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010117001800040010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000006000000001002000000000000060
       000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF

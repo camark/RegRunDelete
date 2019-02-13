@@ -5,17 +5,18 @@
 #include <tchar.h>
 // ---------------------------------------------------------------------------
 USEFORM("XMainForm.cpp", XFormMain);
-USEFORM("LinkArrow.cpp", FormLinkArrow);
-USEFORM("AutorunRemoveForm.cpp", AutorunRemove);
 USEFORM("ABOUT.cpp", AboutBox);
-
-// ---------------------------------------------------------------------------
+USEFORM("AutorunRemoveForm.cpp", AutorunRemove);
+USEFORM("LinkArrow.cpp", FormLinkArrow);
+USEFORM("FileHiddenUnit.cpp", frmHiddenFile);
+//---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int) {
 	try {
 		Application->Initialize();
 		Application->MainFormOnTaskBar = true;
 		Application->CreateForm(__classid(TXFormMain), &XFormMain);
 		Application->CreateForm(__classid(TAboutBox), &AboutBox);
+		Application->CreateForm(__classid(TfrmHiddenFile), &frmHiddenFile);
 		Application->Run();
 	}
 	catch (Exception &exception) {

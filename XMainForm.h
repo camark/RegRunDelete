@@ -32,11 +32,13 @@ __published: // IDE-managed Components
 	TToolButton *btnLinkArrow;
 	TMenuItem *Help1;
 	TMenuItem *About1;
+	TToolButton *ToolButton1;
 
 	void __fastcall btn1Click(TObject *Sender);
 	void __fastcall actLinkArrowExecute(TObject *Sender);
 	void __fastcall About1Click(TObject *Sender);
 	void __fastcall Exit1Click(TObject *Sender);
+	void __fastcall ToolButton1Click(TObject *Sender);
 
 private: // User declarations
 public: // User declarations

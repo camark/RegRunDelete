@@ -9,6 +9,7 @@
 #include "LinkArrow.h"
 #include "ABOUT.h"
 #include "MsgUtil.h"
+#include "FileHiddenUnit.h"
 // ---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -54,3 +55,10 @@ void __fastcall TXFormMain::Exit1Click(TObject *Sender) {
 	Close();
 }
 // ---------------------------------------------------------------------------
+void __fastcall TXFormMain::ToolButton1Click(TObject *Sender)
+{
+	TfrmHiddenFile *hiddenfile=new TfrmHiddenFile(this);
+	hiddenfile->Show();
+}
+//---------------------------------------------------------------------------
+
