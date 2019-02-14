@@ -10,6 +10,7 @@
 #include "ABOUT.h"
 #include "MsgUtil.h"
 #include "FileHiddenUnit.h"
+#include "SoftUninstall.h"
 // ---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -59,6 +60,14 @@ void __fastcall TXFormMain::ToolButton1Click(TObject *Sender)
 {
 	TfrmHiddenFile *hiddenfile=new TfrmHiddenFile(this);
 	hiddenfile->Show();
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TXFormMain::ToolButton2Click(TObject *Sender)
+{
+	TFrmSoftUninstall *childFrm = new TFrmSoftUninstall(this);
+	childFrm->Show();
 }
 //---------------------------------------------------------------------------
 

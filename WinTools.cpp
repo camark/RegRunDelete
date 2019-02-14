@@ -7,8 +7,9 @@
 USEFORM("XMainForm.cpp", XFormMain);
 USEFORM("ABOUT.cpp", AboutBox);
 USEFORM("AutorunRemoveForm.cpp", AutorunRemove);
-USEFORM("LinkArrow.cpp", FormLinkArrow);
 USEFORM("FileHiddenUnit.cpp", frmHiddenFile);
+USEFORM("LinkArrow.cpp", FormLinkArrow);
+USEFORM("SoftUninstall.cpp", FrmSoftUninstall);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int) {
 	try {
@@ -17,6 +18,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int) {
 		Application->CreateForm(__classid(TXFormMain), &XFormMain);
 		Application->CreateForm(__classid(TAboutBox), &AboutBox);
 		Application->CreateForm(__classid(TfrmHiddenFile), &frmHiddenFile);
+		Application->CreateForm(__classid(TFrmSoftUninstall), &FrmSoftUninstall);
 		Application->Run();
 	}
 	catch (Exception &exception) {

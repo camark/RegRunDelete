@@ -186,6 +186,12 @@
             <BuildOrder>1</BuildOrder>
             <PCH>true</PCH>
         </PCHCompile>
+        <CppCompile Include="SoftUninstall.cpp">
+            <Form>FrmSoftUninstall</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>SoftUninstall.h</DependentOn>
+            <BuildOrder>8</BuildOrder>
+        </CppCompile>
         <CppCompile Include="WinTools.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>
@@ -198,8 +204,9 @@
         <FormResources Include="XMainForm.dfm"/>
         <FormResources Include="ABOUT.dfm"/>
         <FormResources Include="AutorunRemoveForm.dfm"/>
-        <FormResources Include="LinkArrow.dfm"/>
         <FormResources Include="FileHiddenUnit.dfm"/>
+        <FormResources Include="LinkArrow.dfm"/>
+        <FormResources Include="SoftUninstall.dfm"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

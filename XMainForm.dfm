@@ -67,6 +67,13 @@ object XFormMain: TXFormMain
       ImageIndex = 3
       OnClick = ToolButton1Click
     end
+    object ToolButton2: TToolButton
+      Left = 177
+      Top = 0
+      Caption = #36719#20214#21368#36733
+      ImageIndex = 4
+      OnClick = ToolButton2Click
+    end
   end
   object actlst1: TActionList
     Images = il1
